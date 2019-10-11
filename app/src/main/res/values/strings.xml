@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mind Game</string>
+    <string name="game_title">Mind Game</string>
+    <string name="two_grid">2X2</string>
+    <string name="three_grid">3X3</string>
+    <string name="four_grid">4X4</string>
+    <string name="five_grid">5X5</string>
+    <string name="instruct">Instruction</string>
+
+    <string name="new_game">New Game</string>
+    <string name="solve">solve</string>
+
+</resources>
