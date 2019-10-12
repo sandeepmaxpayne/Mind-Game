@@ -12,19 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GameLogo"
+        <activity android:name=".memo.HomeActivity"></activity>
+        <activity android:name=".memo.PlayActivity" />
+        <activity android:name=".memo.ScoreBoard" />
+        <activity
+            android:name=".GameLogo"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".puzzle.MainActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
