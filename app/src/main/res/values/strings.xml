@@ -11,4 +11,32 @@
     <string name="solve">solve</string>
 
     <string name="game_last">Last Game</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gameType">Game Type</string>
+    <string name="gameSizeOf">Game Size</string>
+    <string name="home">Home</string>
+    <string name="user_name">User Name</string>
+    <string name="score">Score</string>
+    <string name="game_type">Game Type</string>
+    <string name="game_size">Game Size</string>
+    <string name="play">Play</string>
+    <string name="score_table">Score Table</string>
+    <string name="game_score">Game Score</string>
+    <string name="no_button">No Button</string>
+    <string name="game_exit_alert">Exit Game ?</string>
+    <string name="yes_button">Yes</string>
+    <string name="last_game">Last Name</string>
+    <string-array name="gameType">
+        <item>choose</item>
+        <item>Animal</item>
+        <item>Plant</item>
+        <item>Goods</item>
+        <item>Shapes</item>
+    </string-array>
+    <string-array name="gameSizeOf">
+        <item>Choose</item>
+        <item>Do</item>
+        <item>20 Kare</item>
+    </string-array>
 </resources>

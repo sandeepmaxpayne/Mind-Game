@@ -7,4 +7,9 @@
     <color name="gameBackground">#BC78CA</color>
     <color name="puzzleColor">#B0C239</color>
     <color name="textColor">#222121</color>
+
+    <color name="colorRed">#FF0600</color>
+    <color name="theirMessage">#e0e0e0</color>
+    <color name="transparentGray">#c7c8ca</color>
+    <color name="gray">#A09F9F</color>
 </resources>
