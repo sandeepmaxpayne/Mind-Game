@@ -12,4 +12,6 @@
     <color name="theirMessage">#e0e0e0</color>
     <color name="transparentGray">#c7c8ca</color>
     <color name="gray">#A09F9F</color>
+
+   <color name="textNewColor">#354EC7</color>
 </resources>

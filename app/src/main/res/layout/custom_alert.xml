@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/text_rounded_v2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/imgWarning"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_warning_red"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMessage"
+            android:layout_marginBottom="10dp"
+            android:text="@string/game_exit_alert"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnYes"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_rounded_v2"
+                android:textSize="20sp"
+                android:text="@string/yes_button"
+                android:textAllCaps="false"
+                android:textColor="@color/textNewColor"
+                />
+            <Button
+                android:layout_width="126dp"
+                android:id="@+id/btnNo"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_rounded_v2"
+                android:text="@string/no_button"
+                android:textColor="@color/textNewColor"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -23,7 +23,7 @@
     <string name="play">Play</string>
     <string name="score_table">Score Table</string>
     <string name="game_score">Game Score</string>
-    <string name="no_button">No Button</string>
+    <string name="no_button">No</string>
     <string name="game_exit_alert">Exit Game ?</string>
     <string name="yes_button">Yes</string>
     <string name="last_game">Last Name</string>
