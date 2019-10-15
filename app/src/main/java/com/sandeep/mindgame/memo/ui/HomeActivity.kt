@@ -6,13 +6,14 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.sandeep.mindgame.R
+import com.sandeep.mindgame.memo.datalayer.SharedPreference
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
 
     var check = true
-    lateinit var sharedPreferences: SharedPreferences
+    lateinit var sharedPreference: SharedPreference
     var score: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +21,11 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_home)
 
         btnPlay.setOnClickListener(this)
-        sharedPreferences = SharedPreferences(this)
-        if (!sharedPreferences.getVa)
+        sharedPreference = SharedPreference(this)
+        if (!sharedPreference.getValueBoolean("UserName").isN)
     }
 
     override fun onClick(p0: View?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        //To change body of created functions use File | Settings | File Templates.
     }
 }
