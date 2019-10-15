@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".memo.ui.HomeActivity"></activity>
         <activity android:name=".memo.ui.PlayActivity" />
+        <activity android:name=".memo.ui.BaseActivity"/>
         <activity android:name=".memo.ui.ScoreBoard" />
         <activity
             android:name=".GameLogo"

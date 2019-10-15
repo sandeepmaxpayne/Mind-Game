@@ -1,5 +1,6 @@
 package com.sandeep.mindgame.memo.ui
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.os.PersistableBundle
 import android.view.Gravity
 import androidx.appcompat.app.AppCompatActivity
 import com.tapadoo.alerter.Alerter
+
 
 open class BaseActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
