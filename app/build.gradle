@@ -15,6 +15,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+
     }
     buildTypes {
         release {
@@ -43,15 +46,32 @@ dependencies {
     implementation 'com.tapadoo.android:alerter:3.0.2'
     //Tablayout
     implementation 'com.github.armcha:PlayTabLayout:2.0.0'
-    //Room Db
-    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
-    kapt 'android.arch.persistence.room:compiler:1.1.1'
-    implementation 'android.arch.persistence.room:runtime:1.1.1'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //Room component
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    implementation "androidx.room:room-ktx:$rootProject.roomVersion"
+    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+   // androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+//    // Lifecycle components
+//    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+//    kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+//    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.androidxArchVersion"
+//
+//    // ViewModel Kotlin support
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
+
+// Coroutines
+//    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
+//    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
+//    api 'com.google.guava:guava:28.1-android'
+
 
 
 }
+
 
 task ktlint(type: JavaExec, group: "verification") {
     description = "Chech Kotlin code style."

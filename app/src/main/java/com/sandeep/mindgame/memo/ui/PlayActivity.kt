@@ -2,6 +2,7 @@ package com.sandeep.mindgame.memo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sandeep.mindgame.R
 
 class PlayActivity : AppCompatActivity() {
 

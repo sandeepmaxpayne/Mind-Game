@@ -16,7 +16,7 @@
             android:layout_margin="3dp"
             android:id="@+id/cardView"
             card_view:cardCornerRadius="15dp"
-            card_view:cardElevator="0dp">
+            card_view:cardElevation="0dp">
             <ImageView android:id="@+id/imgCard"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"

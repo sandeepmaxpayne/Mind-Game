@@ -12,18 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".memo.ui.HomeActivity"></activity>
+        <activity android:name=".memo.ui.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".memo.ui.PlayActivity" />
         <activity android:name=".memo.ui.BaseActivity"/>
         <activity android:name=".memo.ui.ScoreBoard" />
         <activity
             android:name=".GameLogo"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".puzzle.MainActivity"
