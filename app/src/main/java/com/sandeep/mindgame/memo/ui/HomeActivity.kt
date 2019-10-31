@@ -1,13 +1,10 @@
 package com.sandeep.mindgame.memo.ui
 
 import android.content.Intent
-import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import com.sandeep.mindgame.R
-import com.sandeep.mindgame.memo.datalayer.SharedPreference
+import com.sandeep.mindgame.memo.datalayer.localdb.SharedPreference
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : View.OnClickListener, BaseActivity() {
@@ -22,6 +19,7 @@ class HomeActivity : View.OnClickListener, BaseActivity() {
         setContentView(R.layout.activity_home)
 
         btnPlay.setOnClickListener(this)
+        btnScoreBoard.setOnClickListener(this)
         sharedPreference = SharedPreference(this)
         if (!sharedPreference.getValueString("UserName").isNullOrEmpty()){
             txtUser.text = sharedPreference.getValueString("UserName")
@@ -51,7 +49,7 @@ class HomeActivity : View.OnClickListener, BaseActivity() {
                     val intent = Intent(this@HomeActivity, PlayActivity::class.java)
                     sharedPreference.save("GameType", spnrGameType.selectedItemId.toInt())
                     sharedPreference.save("GameSize", spnrGameSize.selectedItemId.toInt())
-                    sharedPreference.save("UserName", txtUsername.textAlignment.toString())
+                    sharedPreference.save("UserName", txtUsername.text.toString())
                     startActivity(intent)
                 }
 

@@ -1,4 +1,4 @@
-package com.sandeep.mindgame.memo.datalayer
+package com.sandeep.mindgame.memo.datalayer.localdb
 
 import android.annotation.SuppressLint
 import android.content.Context
